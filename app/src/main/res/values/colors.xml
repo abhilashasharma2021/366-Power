@@ -24,4 +24,7 @@
     <color name="backTwo">#E4EFEF</color>
     <color name="backThree">#D6EAF1</color>
     <color name="pinknew">#F6CCCC</color>
+    <color name="grey_white">#f6fdf5</color>
+    <color name="dark_grey">#969696</color>
+    <color name="light_blue">#c2fbff</color>
 </resources>

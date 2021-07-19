@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_white"
+    tools:context=".activity.ChatActivity">
+    <RelativeLayout
+        android:id="@+id/parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/white_rounded"
+        android:elevation="30dp">
+
+        <RelativeLayout
+            android:id="@+id/relatvie"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/layout_rounded"
+            android:elevation="30dp">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/back_arrow" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/parent_layout">
+
+        <RelativeLayout
+            android:id="@+id/rl_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/tv_text1"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_toRightOf="@+id/iv_user2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:text=" Hi There! \n I am Rabi, your personal assitant for today.Tell me how I can assist you and i will be glad to  assist."
+                android:textColor="@color/grey_light" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="15dp"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/blueView"
+        android:layout_height="350dp">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="end"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/rlCUser"
+            android:background="@drawable/shape_bg_outgoing_bubble"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:textSize="13sp"
+                android:text="What are you mode of payment"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/rlCUser"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/shape_white_outgoing_bubble"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:textSize="13sp"
+                android:id="@+id/txAdmin"
+                android:text="Hi There We accept Visa, \n Master Card and Mobile \n Money"
+                android:textColor="@color/greyDark" />
+
+
+        </RelativeLayout>
+
+</RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_layout3"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_btn"
+        android:elevation="10dp">
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:id="@+id/edittext"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@color/white"
+            android:imeOptions="actionGo"
+            android:inputType="textUri"
+            android:hint=" type reply..."
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/near_me_24" />
+
+        <ImageView
+            android:id="@+id/emoji"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="25dp"
+            android:layout_toLeftOf="@+id/send"
+            android:src="@drawable/emoticon_24" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="12dp"
+            android:layout_toLeftOf="@+id/emoji"
+            android:src="@drawable/attach_file_24" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

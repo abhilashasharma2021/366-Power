@@ -24,6 +24,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.power366.Fragment.FeedsFrag;
 import com.power366.Fragment.HomeFrag;
 
+import com.power366.Fragment.MessageFrag;
 import com.power366.Fragment.TicketFrag;
 import com.power366.R;
 
@@ -105,6 +106,12 @@ RelativeLayout rlHome,rlFeed,rlNotification,rlWhistle,rlLogout,rlTicket,rlProfil
 
             case R.id.rlTicket:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new TicketFrag()).commit();
+                draweLayout.closeDrawer(GravityCompat.END);
+                break;
+
+
+            case R.id.rlMessage:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MessageFrag()).commit();
                 draweLayout.closeDrawer(GravityCompat.END);
                 break;
 

@@ -22,6 +22,11 @@ ActivityProfileBinding binding;
               startActivity(new Intent(ProfileActivity.this,ComplaintActivity.class));
             }
         });
-
+        binding.rlEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ProfileActivity.this,ChooseLocationActivity.class));
+            }
+        });
     }
 }
