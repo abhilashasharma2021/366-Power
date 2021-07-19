@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.HomeFrag">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Hi, Steven "
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:id="@+id/txName"
+                    android:textColor="@color/purple_200"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Let's make this day productive"
+                    android:layout_below="@+id/txName"
+                    android:textColor="@color/grey_light"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_toStartOf="@+id/Ivmenu"
+                    android:padding="8dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/noti" />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/Ivmenu"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@+id/ivUser"
+                    android:src="@drawable/menu" />
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/ivUser"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/face" />
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotobold"
+                android:text="My Complaints"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/purple_200"
+                android:textSize="18sp" />
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:id="@+id/ll"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="170dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="15dp"
+                        app:cardElevation="5dp"
+                        android:id="@+id/card1"
+                        app:cardBackgroundColor="@color/purple_200"
+                        android:layout_height="170dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="8dp"
+                                android:id="@+id/ivBack"
+                                android:layout_marginEnd="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/noti" />
+
+
+                            <ImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:padding="4dp"
+                                android:id="@+id/ivRight"
+                                android:layout_marginStart="25dp"
+                                android:layout_below="@+id/ivBack"
+                                android:src="@drawable/correct" />
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/robotobold"
+                                android:text="Completed"
+                                android:id="@+id/txStatus"
+                                android:layout_below="@+id/ivRight"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginStart="15dp"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/robotobold"
+                                android:text="12 Tickets"
+                                android:layout_below="@+id/txStatus"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginStart="15dp"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+                        </RelativeLayout>
+
+
+
+
+
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="170dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_toEndOf="@+id/card1"
+                        app:cardElevation="5dp"
+                        android:id="@+id/card3"
+                        app:cardBackgroundColor="@color/purple_200"
+                        android:layout_height="140dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="8dp"
+                                android:id="@+id/ivBack1"
+                                android:layout_marginEnd="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/noti" />
+
+
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="4dp"
+                                android:id="@+id/ivRight1"
+                                android:layout_marginStart="25dp"
+                                android:layout_below="@+id/ivBack1"
+                                android:src="@drawable/pen" />
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/robotobold"
+                                android:text="Pending"
+                                android:id="@+id/txStatus1"
+                                android:layout_below="@+id/ivRight1"
+                                android:layout_marginStart="15dp"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/robotobold"
+                                android:text="15 Tickets"
+                                android:layout_below="@+id/txStatus1"
+                                android:layout_marginStart="15dp"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+
+
+
+                        </RelativeLayout>
+
+
+
+
+
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="170dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_below="@+id/card1"
+                        app:cardElevation="5dp"
+                        android:id="@+id/card2"
+                        app:cardBackgroundColor="@color/purple_200"
+                        android:layout_height="140dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="8dp"
+                                android:id="@+id/ivBack2"
+                                android:layout_marginEnd="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/noti" />
+
+
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="4dp"
+                                android:id="@+id/ivRight2"
+                                android:layout_marginStart="25dp"
+                                android:layout_below="@+id/ivBack2"
+                                android:src="@drawable/cancel" />
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/robotobold"
+                                android:text="Canceled"
+                                android:id="@+id/txStatus2"
+                                android:layout_below="@+id/ivRight2"
+                                android:layout_marginStart="15dp"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/robotobold"
+                                android:text="15 Tickets"
+                                android:layout_below="@+id/txStatus2"
+                                android:layout_marginStart="15dp"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+
+
+
+                        </RelativeLayout>
+
+
+
+
+
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="170dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_below="@+id/card3"
+                        app:cardElevation="5dp"
+                        android:id="@+id/card4"
+                        android:layout_toEndOf="@+id/card2"
+                        app:cardBackgroundColor="@color/purple_200"
+                        android:layout_height="170dp">
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="8dp"
+                                android:id="@+id/ivBack3"
+                                android:layout_marginEnd="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:src="@drawable/noti" />
+
+
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:padding="4dp"
+                                android:id="@+id/ivRight3"
+                                android:layout_marginStart="25dp"
+                                android:layout_below="@+id/ivBack3"
+                                android:src="@drawable/feeds" />
+
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/robotobold"
+                                android:text="Feeds"
+                                android:layout_marginTop="10dp"
+                                android:id="@+id/txStatus3"
+                                android:layout_below="@+id/ivRight3"
+                                android:layout_marginStart="15dp"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/robotobold"
+                                android:text="67 Feeds"
+                                android:layout_below="@+id/txStatus3"
+                                android:layout_marginStart="15dp"
+                                android:textColor="@color/white"
+                                android:textSize="13sp" />
+
+
+
+
+                        </RelativeLayout>
+
+
+
+
+
+
+
+                    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+
+
+
+
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Recent Complaints"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/purple_200"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoregular"
+                    android:text="Views"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:textColor="@color/blueNew"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_margin="15dp"
+                app:cardElevation="3dp"
+                app:cardCornerRadius="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="6dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/dots" />
+
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@color/blueNew"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotobold"
+                        android:text="Blown Transformer"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/txTitle"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/purple_200"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="07:00 - 07:15"
+                        android:layout_below="@+id/txTitle"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/txTime"
+                        android:layout_marginStart="15dp"
+                        android:textColor="@color/blueNew"
+                        android:textSize="13sp" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:text="Urgent"
+                        android:textColor="@color/blueNew"
+                        android:textAllCaps="false"
+                        android:backgroundTint="@color/viewgrey"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_below="@+id/txTime"
+                        android:layout_height="wrap_content"/>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+</RelativeLayout>

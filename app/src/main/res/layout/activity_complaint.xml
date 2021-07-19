@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ComplaintActivity">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/back" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/robotobold"
+                android:text="Complaint"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/materialCardView"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Select Category"
+                    android:id="@+id/txSel"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/purple_200"
+                    android:textSize="14sp" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="10dp"
+                    app:boxBackgroundColor="@color/white"
+                    app:helperTextEnabled="false"
+                    app:hintEnabled="false"
+                    android:layout_below="@id/txSel">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-14dp"
+                        android:layout_marginTop="-10dp"
+                        android:maxLength="100"
+                        android:hint="Category" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txSel"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/drop" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Select Priority"
+                    android:id="@+id/txPriority"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/purple_200"
+                    android:textSize="14sp" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="10dp"
+                    app:boxBackgroundColor="@color/white"
+                    app:helperTextEnabled="false"
+                    app:hintEnabled="false"
+                    android:layout_below="@id/txPriority">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-14dp"
+                        android:layout_marginTop="-10dp"
+                        android:maxLength="100"
+                        android:hint="Urgent" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txPriority"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/drop" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Add Subject"
+                    android:id="@+id/txSubjecty"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/purple_200"
+                    android:textSize="14sp" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="10dp"
+                    app:boxBackgroundColor="@color/white"
+                    app:helperTextEnabled="false"
+                    app:hintEnabled="false"
+                    android:layout_below="@id/txSubjecty">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-14dp"
+                        android:layout_marginTop="-10dp"
+                        android:maxLength="100"
+                        android:hint="Write description " />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Enter Location"
+                    android:id="@+id/txLocation"
+                    android:layout_marginStart="10dp"
+                    android:textColor="@color/purple_200"
+                    android:textSize="14sp" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="10dp"
+                    app:boxBackgroundColor="@color/white"
+                    app:helperTextEnabled="false"
+                    app:hintEnabled="false"
+                    android:layout_below="@id/txLocation">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="-14dp"
+                        android:layout_marginTop="-10dp"
+                        android:maxLength="100"
+                        android:hint="Address " />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:background="@color/purple_200"
+                android:gravity="center_vertical"
+                android:layout_height="60dp">
+
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:id="@+id/ivLocation"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/menu"
+                    android:layout_height="35dp"/>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Use Current Location"
+                    android:layout_marginStart="15dp"
+                    android:gravity="center_vertical"
+                    android:layout_toEndOf="@+id/ivLocation"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+
+                <ImageView
+                    android:layout_width="35dp"
+                   android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/menu"
+                    android:layout_height="35dp"/>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="120dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/green_half_round"
+                android:layout_height="120dp">
+
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:src="@drawable/camera"
+                    android:layout_centerInParent="true"
+                    android:layout_height="35dp"/>
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:text="Submit"
+        android:fontFamily="@font/robotoregular"
+        android:textAllCaps="false"
+        app:cornerRadius="8dp">
+
+    </com.google.android.material.button.MaterialButton>
+
+</RelativeLayout>

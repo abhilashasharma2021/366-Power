@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.NotificationActivity">
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardView"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/back" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/robotobold"
+                android:text="Notifications"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:id="@+id/ll"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImg"
+                    android:layout_width="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/man">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Rabi."
+                    android:id="@+id/txName"
+                    android:layout_toRightOf="@+id/profileImg"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txName"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Submitted a complaint Faulty Transformer"
+                    android:textColor="@color/greyBack"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="for Wuse II"
+                    android:id="@+id/txDetail"
+                    android:layout_marginStart="15dp"
+                    android:layout_below="@+id/txName"
+                    android:layout_toRightOf="@+id/profileImg"
+                    android:textColor="@color/greyBack"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="May 14, 10:20 AM"
+                    android:id="@+id/txTime"
+                    android:layout_marginStart="15dp"
+                    android:layout_below="@+id/txDetail"
+                    android:layout_toRightOf="@+id/profileImg"
+                    android:textColor="@color/greyBack"
+                    android:textSize="13sp" />
+
+
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ivDot"
+                    android:layout_below="@+id/txDetail"
+                    android:layout_toRightOf="@+id/txTime"
+                    android:background="@drawable/circle_grey"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="URGENT"
+                    android:layout_marginStart="5dp"
+                    android:layout_below="@+id/txDetail"
+                    android:layout_toRightOf="@+id/ivDot"
+                    android:textColor="@color/pink"
+                    android:textSize="13sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNo"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:textSize="13sp"
+                    app:cornerRadius="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:text="View"
+                    android:layout_marginEnd="5dp"
+                    app:strokeColor="@color/greyBack"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/greyBack"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textStyle="bold"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="@color/greyBack"
+                android:layout_margin="8dp"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImg1"
+                    android:layout_width="45dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/man">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Karim."
+                    android:id="@+id/txName1"
+                    android:layout_toRightOf="@+id/profileImg1"
+                    android:layout_marginStart="15dp"
+                    android:textColor="@color/blue"
+                    android:textSize="14sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/txName1"
+                    android:fontFamily="@font/robotobold"
+                    android:text="Submitted a complaint Faulty Transformer"
+                    android:textColor="@color/greyBack"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="for Wuse II"
+                    android:id="@+id/txDetail1"
+                    android:layout_marginStart="15dp"
+                    android:layout_below="@+id/txName1"
+                    android:layout_toRightOf="@+id/profileImg1"
+                    android:textColor="@color/greyBack"
+                    android:textSize="14sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="May 14, 10:20 AM"
+                    android:id="@+id/txTime1"
+                    android:layout_marginStart="15dp"
+                    android:layout_below="@+id/txDetail1"
+                    android:layout_toRightOf="@+id/profileImg1"
+                    android:textColor="@color/greyBack"
+                    android:textSize="13sp" />
+
+
+                <ImageView
+                    android:layout_width="5dp"
+                    android:layout_height="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/ivDot1"
+                    android:layout_below="@+id/txDetail1"
+                    android:layout_toRightOf="@+id/txTime1"
+                    android:background="@drawable/circle_grey"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotobold"
+                    android:text="URGENT"
+                    android:layout_marginStart="5dp"
+                    android:layout_below="@+id/txDetail1"
+                    android:layout_toRightOf="@+id/ivDot1"
+                    android:textColor="@color/pink"
+                    android:textSize="13sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNo1"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    android:textSize="13sp"
+                    app:cornerRadius="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_alignParentRight="true"
+                    android:text="View"
+                    android:layout_marginEnd="5dp"
+                    app:strokeColor="@color/greyBack"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/greyBack"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textStyle="bold"
+                    />
+
+
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/greyBack"
+                android:layout_margin="8dp"
+                android:layout_marginTop="5dp"/>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

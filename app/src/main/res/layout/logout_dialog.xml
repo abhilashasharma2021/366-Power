@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:cardCornerRadius="20dp"
+        android:layout_centerInParent="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Log Out"
+                android:fontFamily="@font/robotobold"
+                android:textColor="@color/purple_200"/>
+
+
+            <TextView
+                android:id="@+id/txt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:layout_below="@+id/txt1"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Are you sure to Log out from \n this account ?"
+                android:gravity="center_horizontal"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/robotobold"
+                android:layout_marginEnd="15dp"
+                android:textColor="@color/purple_200"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_height="45dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNo"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:textSize="13sp"
+                    app:cornerRadius="10dp"
+                    android:text="Cancle"
+                    app:strokeColor="@color/purple_200"
+                    android:backgroundTint="@color/white"
+                    android:textColor="@color/purple_200"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnYes"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:text="Sure"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@+id/btnNo"
+                    app:cornerRadius="10dp"
+                    android:textSize="13sp"
+                    android:backgroundTint="@color/purple_200"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

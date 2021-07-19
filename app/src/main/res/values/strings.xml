@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">366 Power</string>
+    <string name="welcome_back">Welcome back</string>
+    <string name="sign_in_to_continue">Sign in to continue</string>
+    <string name="sign_in">SIGN IN</string>
+
+    <string name="already_ac">Do you have an account?<b><font color='#49FF9E'> Sign In</font></b></string>
+    <string name="new_user">Don\'t have an account ?<b><font color='#FF3954'> Sign Up</font></b></string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="remember_me">Remember me</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="email_address">Email address</string>
+    <string name="sign_up_with_mobile_number">Sign up with Mobile Number</string>
+    <string name="we_will_send_you_a_one_time_sms_message">We will send you a One Time Sms Message.</string>
+    <string name="carrier_changes_may_apply">Carrier changes may apply.</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="next">Next</string>
+    <string name="home">Home</string>
+    <string name="tickets">Tickets</string>
+    <string name="feeds">Feeds</string>
+    <string name="messages">Messages</string>
+    <string name="profile">Profile</string>
+    <string name="notification">Notification</string>
+    <string name="settings">Settings</string>
+    <string name="whistle_blower_form">Whistle Blower Form</string>
+    <string name="logout">Logout</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

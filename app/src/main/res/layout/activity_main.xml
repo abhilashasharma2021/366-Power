@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="35dp"
+        android:clickable="true"
+        app:tint="@color/white"
+        android:backgroundTint="@color/purple_200"
+        android:src="@drawable/plus"
+        android:focusable="true" />
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="1dp"
+        android:layout_above="@+id/card"
+        >
+
+    </FrameLayout>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+         app:cardElevation="5dp"
+        android:layout_margin="25dp"
+        app:cardCornerRadius="15dp"
+        android:id="@+id/card"
+        android:layout_alignParentBottom="true">
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:elevation="10dp"
+        app:itemIconTint="@drawable/nav_item"
+        app:itemTextColor="@drawable/nav_item"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_item"
+        app:itemIconSize="30dp"
+        android:id="@+id/bottomNavigation"
+        android:layout_alignParentBottom="true"/>
+
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>

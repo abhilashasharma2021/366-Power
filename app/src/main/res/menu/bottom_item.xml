@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_service"
+        android:icon="@drawable/home1"
+        android:state_checked="true"
+        android:state_enabled="true"
+        android:color="@color/white"
+        android:title="."/>
+
+
+    <item
+        android:id="@+id/nav_group"
+        android:icon="@drawable/group"
+        android:state_checked="true"
+        android:state_enabled="true"
+        android:color="@color/white"
+        android:title="."/>
+
+
+
+    <item
+        android:id="@+id/nav_history"
+        android:state_checked="true"
+        android:state_enabled="true"
+        android:color="@color/white"
+        android:title="."/>
+
+
+
+    <item
+        android:id="@+id/nav_curved"
+        android:icon="@drawable/curved"
+        android:state_checked="true"
+        android:state_enabled="true"
+        android:color="@color/white"
+
+        android:title="."/>
+
+    <item
+        android:id="@+id/nav_folder"
+        android:icon="@drawable/folder"
+        android:state_checked="true"
+        android:state_enabled="true"
+        android:color="@color/white"
+        android:title="."/>
+
+
+
+</menu>
