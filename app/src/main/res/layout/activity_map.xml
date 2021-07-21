@@ -84,8 +84,7 @@
             android:layout_height="60dp"
             android:layout_marginTop="35dp"
             android:backgroundTint="@color/black"
-            android:drawableRight="@drawable/ic_baseline_arrow_forward_ios_24"
-            android:text="COMPLETE SETUP"
+            android:text="COMPLETE SETUP >"
             android:textAllCaps="false"
             android:textSize="16dp" />
 

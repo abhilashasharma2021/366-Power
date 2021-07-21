@@ -27,4 +27,21 @@
     <color name="grey_white">#f6fdf5</color>
     <color name="dark_grey">#969696</color>
     <color name="light_blue">#c2fbff</color>
+    <color name="purple">#F32CA37A</color>
+
+    <array name="array1_dot_active">
+        <item>@color/purple_200</item>
+        <item>@color/purple_200</item>
+        <item>@color/purple_200</item>
+        <item>@color/purple_200</item>
+        <item>@color/purple_200</item>
+    </array>
+
+    <array name="array1_dot_inactive">
+        <item>@color/grey</item>
+        <item>@color/grey</item>
+        <item>@color/grey</item>
+        <item>@color/grey</item>
+        <item>@color/grey</item>
+    </array>
 </resources>

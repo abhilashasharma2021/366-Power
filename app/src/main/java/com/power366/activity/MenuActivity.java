@@ -14,6 +14,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 
@@ -124,6 +125,7 @@ RelativeLayout rlHome,rlFeed,rlNotification,rlWhistle,rlLogout,rlTicket,rlProfil
     }
 
     private void logoutDialog(){
+
 
         final Dialog dialog = new Dialog(MenuActivity.this);
 

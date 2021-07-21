@@ -113,7 +113,7 @@
                                 android:id="@+id/ivBack"
                                 android:layout_marginEnd="10dp"
                                 android:layout_alignParentEnd="true"
-                                android:src="@drawable/noti" />
+                                android:src="@drawable/rightblue" />
 
 
                             <ImageView
@@ -183,7 +183,7 @@
                                 android:id="@+id/ivBack1"
                                 android:layout_marginEnd="10dp"
                                 android:layout_alignParentEnd="true"
-                                android:src="@drawable/noti" />
+                                android:src="@drawable/rightwhite" />
 
 
 
@@ -257,7 +257,7 @@
                                 android:id="@+id/ivBack2"
                                 android:layout_marginEnd="10dp"
                                 android:layout_alignParentEnd="true"
-                                android:src="@drawable/noti" />
+                                android:src="@drawable/rightwhite" />
 
 
 
@@ -330,7 +330,7 @@
                                 android:id="@+id/ivBack3"
                                 android:layout_marginEnd="10dp"
                                 android:layout_alignParentEnd="true"
-                                android:src="@drawable/noti" />
+                                android:src="@drawable/rightblue" />
 
 
 

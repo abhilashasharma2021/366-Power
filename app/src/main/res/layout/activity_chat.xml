@@ -29,11 +29,35 @@
                 android:src="@drawable/back_arrow" />
         </RelativeLayout>
 
-        <ImageView
-            android:layout_width="160dp"
-            android:layout_height="80dp"
-            android:layout_centerInParent="true"
-            android:src="@drawable/logo" />
+        <RelativeLayout
+            android:layout_width="60dp"
+            android:id="@+id/rl"
+            android:layout_toEndOf="@+id/relatvie"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/greenoutline"
+            android:layout_height="60dp">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/adde" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="13sp"
+            android:layout_toEndOf="@+id/rl"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:text="AEDC"
+            android:textColor="@color/grey_light" />
+
+
     </RelativeLayout>
 
     <RelativeLayout

@@ -11,11 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.366Power">
-        <activity android:name=".activity.ChooseLocationActivity"></activity>
+        <activity android:name=".activity.ViewPagerActivity">
+
+
+        </activity>
+        <activity android:name=".activity.ChooseLocationActivity" />
         <activity
             android:name=".activity.MapActivity"
             android:configChanges="orientation|screenSize"
-            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"></activity>
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
         <activity
             android:name=".activity.ViewTicketActivity"
             android:configChanges="orientation|screenSize"
@@ -23,9 +27,7 @@
         <activity
             android:name=".activity.ChatActivity"
             android:configChanges="orientation|screenSize"
-            android:windowSoftInputMode="stateVisible|adjustPan">
-
-        </activity>
+            android:windowSoftInputMode="stateVisible|adjustPan"></activity>
         <activity
             android:name=".activity.ComplaintSubmittedActivity"
             android:configChanges="orientation|screenSize"
@@ -68,7 +70,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".MainActivity"

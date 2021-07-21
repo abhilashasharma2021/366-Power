@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.FeedDetailsFrag">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/mask"/>
+
+
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                     android:layout_margin="15dp"
+                    android:id="@+id/ivRight"
+                    android:src="@drawable/rightarrow"
+                    android:layout_alignParentBottom="true"/>
+
+                <TextView
+                    android:id="@+id/txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_toEndOf="@+id/ivRight"
+                    android:text="FEEDS"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/white"/>
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/ivShare"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/share"
+                    android:layout_alignParentBottom="true"/>
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/ivLike"
+                    android:layout_toStartOf="@+id/ivShare"
+                    android:src="@drawable/like"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="15dp"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="May 14 2016 "
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/grey_light"/>
+
+                <TextView
+                    android:id="@+id/tx"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="|"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/txtDate"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/grey_light"/>
+
+                <TextView
+                    android:id="@+id/txDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:text="Information"
+                    android:layout_marginStart="5dp"
+                    android:layout_toRightOf="@+id/tx"
+                    android:layout_alignParentBottom="true"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/grey_light"/>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/txTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Story of our fathers"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/greyDark"/>
+
+            <TextView
+                android:id="@+id/txDiscription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="'My dear Rajan,last of the ocean swimming \n elephants, the time has come , to tell you a story....'"
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/greyDark"/>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:background="@color/blueView"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+
+
+                <View
+                    android:layout_width="2dp"
+                    android:id="@+id/view"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@color/teal_700"
+                    android:layout_height="80dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_toEndOf="@+id/view"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="“Jemmy Ganapathy, from her home in Coorg, narrates a story to Rajan - The last of the ocean swimming elephants, living in the Andamans. Despite never having met, what is the connection these two share? This is a story that has its beginnings in the World War II.”"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/greyDark"/>
+
+
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_margin="15dp"
+                android:layout_toEndOf="@+id/view"
+                android:layout_marginTop="15dp"
+                android:text="Of all the stories we know, the ones that will stay with us till the very end are the tales that were told to us when we were children; told by fathers, grandmothers,  uncles and others by the dying light of a candle, around a bonfire, under a starlit sky or sometimes inside the rattling compartment of a rickety rail coach that chugged along, into the night."
+                android:layout_gravity="center"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/greyDark"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginStart="15dp"
+                android:text="Story by UNTOLD.IN"
+                android:fontFamily="@font/robotoregular"
+                android:textColor="@color/greyDark"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/viewgrey"/>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_margin="15dp"
+                    android:id="@+id/ivUser"
+                    android:src="@drawable/greenuser" />
+
+
+                <TextView
+                    android:id="@+id/txName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/ivUser"
+                    android:text="Jason Emeka"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/greyDark"/>
+
+                <TextView
+                    android:id="@+id/txTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="4.09 PM"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/grey"/>
+
+
+
+                <TextView
+                    android:id="@+id/txMsg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13sp"
+                    android:layout_toStartOf="@+id/txTime"
+                    android:layout_marginEnd="20dp"
+                    android:layout_below="@+id/txName"
+                    android:layout_toEndOf="@+id/ivUser"
+                    android:text="A heart whelmin story by untold. Kudos to Pankaj and team for the great effort and fantastic writing skills"
+                    android:fontFamily="@font/robotoregular"
+                    android:textColor="@color/greyDark"/>
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_toEndOf="@+id/ivUser"
+                    android:layout_below="@+id/txMsg"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content">
+
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/ivLikeComment"
+                        android:src="@drawable/like"
+                        app:tint="@color/greyDark" />
+
+
+
+                    <TextView
+                        android:id="@+id/txLike"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Like"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/ivLikeComment"
+                        android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/greyDark"/>
+
+
+
+
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:id="@+id/ivRply"
+                        android:src="@drawable/like"
+                        android:layout_marginStart="40dp"
+                        android:layout_toEndOf="@+id/txLike"
+                        app:tint="@color/greyDark" />
+
+
+
+                    <TextView
+                        android:id="@+id/txRely"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:text="Reply"
+                        android:layout_marginStart="10dp"
+                        android:layout_toEndOf="@+id/ivRply"
+                        android:fontFamily="@font/robotoregular"
+                        android:textColor="@color/greyDark"/>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_below="@+id/txRely"
+                        android:background="@color/viewgrey"/>
+
+
+
+
+
+
+                </RelativeLayout>
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

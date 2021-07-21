@@ -6,6 +6,8 @@
 
     <string name="already_ac">Do you have an account?<b><font color='#49FF9E'> Sign In</font></b></string>
     <string name="new_user">Don\'t have an account ?<b><font color='#FF3954'> Sign Up</font></b></string>
+    <string name="let_ride">Let your <b><font color='#167756'>Voice \n </font>
+    be  <font color='#167756'>Heard </font></b></string>
     <string name="forgot_password">Forgot password?</string>
     <string name="remember_me">Remember me</string>
     <string name="enter_password">Enter Password</string>
