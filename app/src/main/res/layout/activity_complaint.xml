@@ -19,6 +19,7 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="50dp"
+                android:id="@+id/ivBack"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="15dp"
                 android:src="@drawable/back" />

@@ -61,7 +61,7 @@
         android:layout_height="match_parent">
 
         <RelativeLayout
-            android:id="@+id/rl_relative"
+            android:id="@+id/rlRelative"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -118,7 +118,7 @@
             android:id="@+id/rl_relative1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/rl_relative"
+            android:layout_below="@id/rlRelative"
             android:layout_marginTop="5dp">
 
             <de.hdodenhof.circleimageview.CircleImageView

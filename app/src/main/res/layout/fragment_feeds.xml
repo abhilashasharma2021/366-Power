@@ -18,45 +18,53 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/relative"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:id="@+id/iVBack"
+            android:layout_marginStart="15dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/path" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/iVBack"
+            android:fontFamily="@font/robotoregular"
+            android:text="Backs"
+            android:id="@+id/txBack"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp">
-
-            <ImageView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:id="@+id/iVBack"
-                android:layout_marginStart="15dp"
-                android:layout_centerVertical="true"
-                android:src="@drawable/path" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_toEndOf="@+id/iVBack"
-                android:fontFamily="@font/robotoregular"
-                android:text="Backs"
-                android:id="@+id/txBack"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
+    </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/robotobold"
+            android:text="Feeds"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
 
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:fontFamily="@font/robotobold"
-                android:text="Feeds"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
 
+</RelativeLayout>
 
-        </RelativeLayout>
 
 <RelativeLayout
     android:layout_width="wrap_content"
+    android:id="@+id/rlDetails"
     android:layout_height="wrap_content">
 
     <TextView

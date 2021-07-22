@@ -22,6 +22,13 @@ ActivityProfileBinding binding;
               startActivity(new Intent(ProfileActivity.this,ComplaintActivity.class));
             }
         });
+
+        binding.ivBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+             finish();
+            }
+        });
         binding.rlEdit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/nav_service"
+        android:id="@+id/nav_home"
         android:icon="@drawable/home1"
         android:state_checked="true"
         android:state_enabled="true"
@@ -11,7 +11,7 @@
 
 
     <item
-        android:id="@+id/nav_group"
+        android:id="@+id/nav_feed"
         android:icon="@drawable/group"
         android:state_checked="true"
         android:state_enabled="true"
@@ -21,7 +21,7 @@
 
 
     <item
-        android:id="@+id/nav_history"
+        android:id="@+id/nav_add"
         android:state_checked="true"
         android:state_enabled="true"
         android:color="@color/white"
@@ -30,7 +30,7 @@
 
 
     <item
-        android:id="@+id/nav_curved"
+        android:id="@+id/nav_msg"
         android:icon="@drawable/curved"
         android:state_checked="true"
         android:state_enabled="true"
@@ -39,7 +39,7 @@
         android:title="."/>
 
     <item
-        android:id="@+id/nav_folder"
+        android:id="@+id/nav_profile"
         android:icon="@drawable/folder"
         android:state_checked="true"
         android:state_enabled="true"

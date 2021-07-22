@@ -20,7 +20,7 @@ import com.power366.activity.NotificationActivity;
 public class HomeFrag extends Fragment {
 
 CardView card1,card3,card2,card4;
-ImageView Ivmenu;
+ImageView Ivmenu,ivNoti;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -31,7 +31,16 @@ ImageView Ivmenu;
         card2=view.findViewById(R.id.card2);
         card4=view.findViewById(R.id.card4);
         Ivmenu=view.findViewById(R.id.Ivmenu);
+        ivNoti=view.findViewById(R.id.ivNoti);
 
+
+        Ivmenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               startActivity(new Intent(getActivity(),NotificationActivity.class));
+
+            }
+        });
 
         Ivmenu.setOnClickListener(new View.OnClickListener() {
             @Override

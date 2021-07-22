@@ -72,7 +72,32 @@ RelativeLayout rlHome,rlFeed,rlNotification,rlWhistle,rlLogout,rlTicket,rlProfil
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        return false;
+
+        switch (item.getItemId()){
+
+            case R.id.nav_home:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFrag()).commit();
+                break;
+
+            case R.id.nav_feed:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new FeedsFrag()).commit();
+                break;
+
+            case R.id.nav_msg:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new MessageFrag()).commit();
+                break;
+
+            case R.id.nav_profile:
+                startActivity(new Intent(MenuActivity.this,ProfileActivity.class));
+                break;
+
+            case R.id.nav_add:
+
+                break;
+        }
+
+
+        return true;
     }
 
     @Override

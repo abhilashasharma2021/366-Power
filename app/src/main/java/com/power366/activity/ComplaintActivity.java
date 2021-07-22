@@ -17,6 +17,13 @@ ActivityComplaintBinding binding;
         super.onCreate(savedInstanceState);
         binding= ActivityComplaintBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
+
+        binding.ivBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+               finish();
+            }
+        });
         binding.btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -35,6 +35,7 @@
                     <ImageView
                         android:layout_width="45dp"
                         android:layout_height="45dp"
+                        android:id="@+id/ivBAck"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="15dp"
                         android:src="@drawable/back" />
@@ -323,6 +324,365 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/llAddress"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="5dp"
+                            android:padding="8dp"
+                            android:src="@drawable/address" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="23 Jay Street ,Wuse II"
+                            android:textColor="@color/grey_light"
+                            android:textSize="11sp" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl1"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toStartOf="@+id/txDots1"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="14 May 2021"
+                        android:textColor="@color/grey_light"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/txDots1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:padding="6dp"
+                        android:src="@drawable/dots" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/txDots1"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toStartOf="@+id/btNo1"
+                        android:backgroundTint="@color/blueView"
+                        android:text="Urgent"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pink" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btNo1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/txDots1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/blueView"
+                        android:text="No Response"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blueNew" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="220dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/btNo1"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:backgroundTint="@color/grey_light"
+                        android:text="Close Ticket"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@color/blueNew" />
+
+                    <TextView
+                        android:id="@+id/txTitle1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/robotobold"
+                        android:text="Faulty Transformer"
+                        android:textColor="@color/blueNew"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/llClock1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txTitle1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="5dp"
+                            android:padding="8dp"
+                            android:src="@drawable/clock" />
+
+
+                        <TextView
+                            android:id="@+id/txTime1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="07:00 - 07:15"
+                            android:textColor="@color/grey_light"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llAddress1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llClock1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="5dp"
+                            android:padding="8dp"
+                            android:src="@drawable/calendar" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="23 June ,2021"
+                            android:textColor="@color/grey_light"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llAddress1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="5dp"
+                            android:padding="8dp"
+                            android:src="@drawable/address" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="23 Jay Street ,Wuse II"
+                            android:textColor="@color/grey_light"
+                            android:textSize="11sp" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toStartOf="@+id/txDots2"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="14 May 2021"
+                        android:textColor="@color/grey_light"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/txDots2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:padding="6dp"
+                        android:src="@drawable/dots" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/txDots2"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toStartOf="@+id/btNo2"
+                        android:backgroundTint="@color/blueView"
+                        android:text="Urgent"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pink" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btNo2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/txDots2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/blueView"
+                        android:text="No Response"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blueNew" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="220dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/btNo2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:backgroundTint="@color/grey_light"
+                        android:text="Close Ticket"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@color/blueNew" />
+
+                    <TextView
+                        android:id="@+id/txTitle2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/robotobold"
+                        android:text="Faulty Transformer"
+                        android:textColor="@color/blueNew"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/llClock2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txTitle2"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="5dp"
+                            android:padding="8dp"
+                            android:src="@drawable/clock" />
+
+
+                        <TextView
+                            android:id="@+id/txTime2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="07:00 - 07:15"
+                            android:textColor="@color/grey_light"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llAddress2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llClock2"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="5dp"
+                            android:padding="8dp"
+                            android:src="@drawable/calendar" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="23 June ,2021"
+                            android:textColor="@color/grey_light"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llAddress2"
                         android:orientation="horizontal">
 
                         <ImageView

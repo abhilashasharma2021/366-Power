@@ -46,6 +46,7 @@
                     android:layout_height="40dp"
                     android:layout_toStartOf="@+id/Ivmenu"
                     android:padding="8dp"
+                    android:id="@+id/ivNoti"
                     android:layout_centerVertical="true"
                     android:src="@drawable/noti" />
                 <ImageView

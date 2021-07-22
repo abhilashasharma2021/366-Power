@@ -17,6 +17,7 @@
             android:id="@+id/relatvie"
             android:layout_width="45dp"
             android:layout_height="45dp"
+
             android:layout_centerVertical="true"
             android:layout_marginStart="15dp"
             android:background="@drawable/layout_rounded"

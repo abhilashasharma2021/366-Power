@@ -23,6 +23,13 @@ ActivityComplaintSubmittedBinding binding;
         binding=ActivityComplaintSubmittedBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        binding.ivBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
         binding.btnDone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
