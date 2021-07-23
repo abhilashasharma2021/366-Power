@@ -16,12 +16,6 @@ ActivityProfileBinding binding;
         super.onCreate(savedInstanceState);
         binding=ActivityProfileBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        binding.rlFeedback.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-              startActivity(new Intent(ProfileActivity.this,ComplaintActivity.class));
-            }
-        });
 
         binding.ivBack.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -29,11 +23,6 @@ ActivityProfileBinding binding;
              finish();
             }
         });
-        binding.rlEdit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(ProfileActivity.this,ChooseLocationActivity.class));
-            }
-        });
+
     }
 }

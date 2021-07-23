@@ -34,7 +34,7 @@ ImageView Ivmenu,ivNoti;
         ivNoti=view.findViewById(R.id.ivNoti);
 
 
-        Ivmenu.setOnClickListener(new View.OnClickListener() {
+        ivNoti.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                startActivity(new Intent(getActivity(),NotificationActivity.class));

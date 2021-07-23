@@ -30,7 +30,8 @@ private  View view;
         binding.ivBAck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().finish();
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFrag()).commit();
+
             }
         });
         return view;

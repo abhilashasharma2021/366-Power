@@ -11,6 +11,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import android.view.View;
@@ -20,6 +21,7 @@ import android.widget.RelativeLayout;
 
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
 
 import com.power366.Fragment.FeedsFrag;
@@ -35,6 +37,7 @@ public  static  DrawerLayout  draweLayout;
 NavigationView navView;
 RelativeLayout rlHome,rlFeed,rlNotification,rlWhistle,rlLogout,rlTicket,rlProfile,rlMessage;
     BottomNavigationView bottomNavigation;
+    FloatingActionButton fab;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,6 +53,7 @@ RelativeLayout rlHome,rlFeed,rlNotification,rlWhistle,rlLogout,rlTicket,rlProfil
         rlTicket = findViewById(R.id.rlTicket);
         rlProfile = findViewById(R.id.rlProfile);
         rlMessage = findViewById(R.id.rlMessage);
+        fab = findViewById(R.id.fab);
 
         bottomNavigation=findViewById(R.id.bottomNavigation);
         bottomNavigation.setOnNavigationItemSelectedListener(this);
@@ -62,6 +66,14 @@ RelativeLayout rlHome,rlFeed,rlNotification,rlWhistle,rlLogout,rlTicket,rlProfil
         rlTicket.setOnClickListener(this);
         rlProfile.setOnClickListener(this);
         rlMessage.setOnClickListener(this);
+
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MenuActivity.this,ComplaintActivity.class));
+            }
+        });
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new HomeFrag()).commit();

@@ -30,5 +30,13 @@ ActivityComplaintBinding binding;
                 startActivity(new Intent(ComplaintActivity.this,ComplaintSubmittedActivity.class));
             }
         });
+
+
+        binding.rlLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ComplaintActivity.this,ChooseLocationActivity.class));
+            }
+        });
     }
 }

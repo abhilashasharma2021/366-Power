@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:clickable="true"
         android:focusableInTouchMode="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logonew"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/logonew"
         android:supportsRtl="true"
         android:theme="@style/Theme.366Power">
         <activity android:name=".activity.ViewPagerActivity">

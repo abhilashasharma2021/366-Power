@@ -109,7 +109,7 @@
                                 android:background="@null"
                                 android:visibility="visible"
                                 android:textColorHint="@color/white"
-                                android:hint="@string/email_address"
+                                android:hint="Password"
                                 android:fontFamily="@font/robotoregular"
                                 android:inputType="textPassword" />
 
