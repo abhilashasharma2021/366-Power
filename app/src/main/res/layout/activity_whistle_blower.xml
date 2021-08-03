@@ -189,6 +189,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="12dp"
                     android:layout_below="@+id/tx"
+                    android:visibility="gone"
                     android:layout_marginEnd="12dp"
                     android:layout_marginBottom="10dp"
                     app:boxBackgroundColor="@color/white"
@@ -211,15 +212,33 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:padding="10dp"
+                    android:visibility="gone"
                     android:layout_alignParentRight="true"
                     android:layout_below="@+id/tx"
                     android:layout_marginEnd="15dp"
                     android:src="@drawable/drop" />
-
+                <Spinner
+                    android:id="@+id/spinType"
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:padding="10sp"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@id/tx"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"/>
 
             </RelativeLayout>
 
 
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_margin="5dp"
+                android:background="#dbdbdb"/>
 
 
 
@@ -284,6 +303,7 @@
                     app:boxBackgroundColor="@color/white"
                     app:helperTextEnabled="false"
                     app:hintEnabled="false"
+                    android:visibility="gone"
                     android:layout_below="@id/txSel"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -304,14 +324,34 @@
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:padding="10dp"
+                    android:visibility="gone"
                     android:layout_alignParentRight="true"
                     android:layout_below="@+id/txSel"
-                    android:layout_marginEnd="15dp"
-                    android:src="@drawable/drop" />
+                    android:layout_marginEnd="15dp"/>
+
+
+
+                <Spinner
+                    android:id="@+id/spinDiscos"
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:padding="1dip"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_below="@id/txSel"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"/>
 
             </RelativeLayout>
 
-
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_margin="5dp"
+                android:background="#dbdbdb"/>
 
             <TextView
                 android:layout_width="wrap_content"

@@ -20,7 +20,7 @@ ActivityVerifyOtpBinding binding;
         binding.btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), MenuActivity.class));
+                startActivity(new Intent(getApplicationContext(), ChooseLocationActivity.class));
 
             }
         });

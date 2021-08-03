@@ -11,27 +11,28 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.power366.R;
-import com.power366.databinding.FragmentFeedDetailsBinding;
+import com.power366.activity.MenuActivity;
+import com.power366.databinding.FragmentCancelBinding;
+import com.power366.databinding.FragmentTicketBinding;
 
 
-public class FeedDetailsFrag extends Fragment {
-FragmentFeedDetailsBinding binding;
-View view;
-    private Context context;
+public class CancelFrag extends Fragment {
+    FragmentCancelBinding binding;
+    View view;
+    Context context;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-
-        binding=FragmentFeedDetailsBinding.inflate(getLayoutInflater(),container,false);
+        binding= FragmentCancelBinding.inflate(getLayoutInflater(),container,false);
         view=binding.getRoot();
         context=getActivity();
 
-
-        binding.ivRight.setOnClickListener(new View.OnClickListener() {
+        binding.ivBAck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-            getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new FeedsFrag()).commit();
+                startActivity(new Intent(getActivity(), MenuActivity.class));
             }
         });
         return view;

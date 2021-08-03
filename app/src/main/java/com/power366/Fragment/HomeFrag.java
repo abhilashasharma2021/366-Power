@@ -58,14 +58,25 @@ ImageView Ivmenu,ivNoti;
             @Override
             public void onClick(View v) {
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new CompletedFrag()).commit();
+
             }
         });
         card4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new FeedsFrag()).commit();
+
             }
         });
+
+        card2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new CancelFrag()).commit();
+
+            }
+        });
+
 
         return view;
 

@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.CancelFrag">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="5dp"
+                app:cardBackgroundColor="@color/backOne"
+                tools:ignore="MissingConstraints">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:id="@+id/ivBAck"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/back" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:fontFamily="@font/robotobold"
+                        android:text="Cancel"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+
+                </RelativeLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:id="@+id/ivSearch"
+                            android:padding="5dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/search" />
+
+
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:hint="Search for"
+                            android:textSize="13sp"
+                            android:singleLine="true"
+                            android:maxLength="80"
+                            android:fontFamily="@font/robotoregular"
+                            android:layout_marginStart="10dp"
+                            android:layout_toEndOf="@+id/ivSearch"
+                            android:background="@null"
+                            android:layout_height="wrap_content">
+
+
+                        </EditText>
+
+
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:id="@+id/iv"
+                            android:layout_marginEnd="15dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/crss" />
+
+
+
+                    </RelativeLayout>
+
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="2dp">
+
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/filter" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp">
+
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:padding="8dp"
+                    android:id="@+id/ivCal"
+                    android:src="@drawable/callen" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:fontFamily="@font/robotobold"
+                    android:text="May"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/ivCal"
+                    android:textColor="@color/greyDark"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="15dp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/robotobold"
+                    android:text="14 May 2021"
+                    android:textColor="@color/grey"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="3dp">
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_width="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_toStartOf="@+id/txDots"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="14 May 2021"
+                        android:textColor="@color/grey_light"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:id="@+id/txDots"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:padding="6dp"
+                        android:src="@drawable/dots" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_below="@+id/txDots"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toStartOf="@+id/btNo"
+                        android:backgroundTint="@color/pinknew"
+                        android:text="Medium"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pink" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btNo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:layout_below="@+id/txDots"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginEnd="10dp"
+                        android:backgroundTint="@color/blueView"
+                        android:text="No Responce"
+                        android:textAllCaps="false"
+                        android:textColor="@color/blueNew" />
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="220dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/btNo"
+                        android:layout_alignParentEnd="true"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:id="@+id/btProgress"
+                        android:fontFamily="@font/robotoregular"
+                        android:textSize="12sp"
+                        android:backgroundTint="@color/pink"
+                        android:text="CANCELLED"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="5dp"
+                        android:background="@color/blueNew" />
+
+                    <TextView
+                        android:id="@+id/txTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/robotobold"
+                        android:text="Electrical Malfunction"
+                        android:textColor="@color/blueNew"
+                        android:textSize="15sp" />
+
+                    <LinearLayout
+                        android:id="@+id/llClock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txTitle"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="5dp"
+                            android:padding="8dp"
+                            android:src="@drawable/clock" />
+
+
+                        <TextView
+                            android:id="@+id/txTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="07:00 pm"
+                            android:textColor="@color/grey_light"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llClock"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="5dp"
+                            android:padding="8dp"
+                            android:src="@drawable/calendar" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="23 June ,2021"
+                            android:textColor="@color/grey_light"
+                            android:textSize="11sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/llAddress"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_marginStart="5dp"
+                            android:padding="8dp"
+                            android:src="@drawable/address" />
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:fontFamily="@font/robotoregular"
+                            android:text="23 Jay Street ,Wuse II"
+                            android:textColor="@color/grey_light"
+                            android:textSize="11sp" />
+
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

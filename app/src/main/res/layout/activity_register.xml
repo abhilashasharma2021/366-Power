@@ -285,6 +285,22 @@
                     android:layout_marginRight="20dp"
                     android:layout_height="50dp">
 
+
+                    <Spinner
+                        android:id="@+id/spinCountry"
+                        android:layout_width="match_parent"
+                        android:textSize="14sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_alignParentRight="true"
+                        android:padding="10sp"
+                        android:spinnerMode="dropdown"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_below="@id/tx"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"/>
+
+
                     <EditText
                         android:layout_width="match_parent"
                         android:id="@+id/et"
@@ -294,9 +310,9 @@
                         android:maxLength="70"
                         android:layout_marginLeft="12sp"
                         android:background="@null"
-                        android:visibility="visible"
+                        android:visibility="gone"
                         android:textColorHint="@color/grey_light"
-                        android:hint="Nigeria(+234)"
+                        android:hint=""
                         android:fontFamily="@font/robotoregular"
                         android:inputType="textEmailAddress" />
 

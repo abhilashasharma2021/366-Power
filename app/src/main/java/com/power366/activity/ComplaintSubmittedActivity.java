@@ -33,7 +33,9 @@ ActivityComplaintSubmittedBinding binding;
         binding.btnDone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                categoryDialog();
+              //  categoryDialog();
+
+               startActivity(new Intent(ComplaintSubmittedActivity.this,MenuActivity.class));
             }
         });
 
